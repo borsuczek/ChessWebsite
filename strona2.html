@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Aleksandra Borsuk - moje hobby</title>
+    <link rel="stylesheet" type="text/css" href="css_strona1.css" />
+    <script src="js.js"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+<body>
+    <header>
+        <svg height="300" width="500">
+            <ellipse cx="450" cy="38" rx="40" ry="25"></ellipse>
+            <text x="430" y="47">AB</text>
+        </svg>
+        <h1>Aleksandra Borsuk: moje hobby - szachy</h1>
+    </header>
+    <div class="content">
+        <nav>
+            <div class="spis">
+                <p id="nav">Spis treści:</p>
+                <ol>
+                    <li>
+                        <a href="index.html">Podstawowe informacje</a>
+                        <ul>
+                            <li><a href="index.html#menu1">Co to są szachy?</a></li>
+                            <li><a href="index.html#menu2">Historia szachów</a></li>
+                            <li><a href="index.html#menu3">Szachy a komputer</a></li>
+                            <li><a href="index.html#menu4">Popularność szachów</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="active" href="strona2.html">Zasady gry w szachy</a></li>
+                    <li><a href="strona3.html">Formularz zgłoszenia na zajęcia</a></li>
+                </ol>
+            </div>
+        </nav>
+        <article id="art">
+            <h2>Zasady gry w szachy</h2>
+            <p>
+                Każda bierka porusza się na sobie właściwy sposób. Ruchy wykonuje się na wolne pola, wyjąwszy pola zajęte przez bierki przeciwnika. Z wyjątkiem skoczków bierki nie mogą przeskakiwać innych. Bicie bierki przeciwnika to ruch bierki na pole, na której stoi bierka przeciwnika (jedynym wyjątkiem jest en passant, bicie w przelocie), wówczas bierka atakująca zajmuje miejsce bierki zbijanej, która jest zdejmowana z szachownicy i nie bierze udziału w dalszej grze. Król może być szachowany, tzn. może być zagrożony zbiciem, lecz nie może być zbity.
+
+                Król może ruszać się o jedno pole w poziomie, pionie lub na ukos. Najwyżej raz w grze każdy z króli może wykonać specjalny ruch zwany roszadą.
+                Wieża porusza się o dowolną liczbę wolnych pól w poziomie i pionie; porusza się ona również podczas roszady.
+                Goniec może ruszać się o dowolną liczbę wolnych pól po przekątnych.
+                Hetman porusza się o dowolną liczbę wolnych pól w poziomie, pionie i na ukos (łączy w ten sposób w sobie ruchy wieży i gońca).
+                Skoczek rusza się na najbliższe pole nie znajdujące się w tym samym rzędzie, kolumnie lub przekątnej; innymi słowy poruszają się one o dwa pola na kształt wieży, a następnie jedno pole prostopadle do tego kierunku. Ruch skoczka nie jest blokowany przez inne bierki, tzn. „skacze” on na nowe pole. Ruchy skoczka opisuje się także porównując je do litery „L” lub cyfry „7” (lub dowolnej odbitej, w poziomie i pionie, ich postaci), przy czym wykonuje on dwa kroki w danym kierunku, 90° zwrot w jednym z kierunków i krok w nowo wybranych kierunku.
+                Pion ma najbardziej rozbudowane zasady poruszania się:
+                Pion może poruszyć się o jedno pole naprzód, o ile nie jest ono zajęte. Jeżeli nie wykonano danym pionem posunięcia, to w pierwszym ruchu ma on możliwość wykonania ruchu o dwa pola naprzód, o ile żadne z tych pól nie jest zajęte. Pion nie może ruszać się do tyłu.
+                Piony są jedynymi bierkami, które biją inaczej niż się poruszają. Mogą one zbić wrogą bierkę, jeśli znajduje się ona na jednym z dwóch pól sąsiadujących w poziomie z polem przed nimi (tzn. z pól na ukos przed nimi), lecz nie mogą się tam ruszyć, jeśli pola te są wolne.
+            </p>
+            <table id="move">
+                <tr>
+                    <th>Wartości figur:</th>
+                </tr>
+                <tr>
+                    <td>hetman</td>
+                    <td>9 pkt</td>
+                </tr>
+                <tr>
+                    <td>wieża</td>
+                    <td>5 pkt</td>
+                </tr>
+                <tr>
+                    <td>skoczek</td>
+                    <td>3 pkt</td>
+                </tr>
+                <tr>
+                    <td>goniec</td>
+                    <td>3 pkt</td>
+                </tr>
+                <tr>
+                    <td>pionek</td>
+                    <td>1 pkt</td>
+                </tr>
+            </table><br />
+            <p><b><u>Zadania - mat w 1 ruchu:</u></b></p>
+            <p id="maty">
+                <a href="mat1.jpg" target="_self"><img class="maty" src="mat1.jpg" alt="maty" title="mat w 1" /></a>
+                <a href="mat1.jpg" target="_self"><img class="maty" src="mat2.jpg" alt="maty" title="mat w 1" /></a>
+                <a href="mat6.png" target="_self"><img class="maty" src="mat6.png" alt="maty" title="mat w 1" /></a>
+                <a href="mat7.png" target="_self"><img class="maty" src="mat7.png" alt="maty" title="mat w 1" /></a>
+                <a href="mat8.png" target="_self"><img class="maty" src="mat8.png" alt="maty" title="mat w 1" /></a>
+                <a href="mat9.png" target="_self"><img class="maty" src="mat9.png" alt="maty" title="mat w 1" /></a>
+                <a href="mat10.png" target="_self"><img class="maty" src="mat10.png" alt="maty" title="mat w 1" /></a>
+                <a href="mat11.png" target="_self"><img class="maty" id="mat8" src="mat11.png" alt="maty" title="mat w 1" /></a>
+            </p>
+            <p><a href="http://zadania.szachowe.pl/" target="_blank">Tu znajdziesz więcej zadań</a></p>
+        </article>
+    </div>
+    <footer>
+        <img class="anim" src="knight.png" alt="skoczek" />
+    </footer>
+    <script>ustawienia();jquery2();</script>
+</body>
+</html>

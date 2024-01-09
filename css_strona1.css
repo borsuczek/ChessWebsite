@@ -1,0 +1,150 @@
+﻿body {
+    width:100%;
+    margin:0px;
+    background-color:azure;
+}
+header{
+    text-align:center;
+    background-color:black;
+    margin:auto;
+    width:86%;
+    padding:5px;
+}
+svg{
+    position:absolute;
+}
+ellipse{
+    fill:#4e1d1d;
+    stroke:#b35dc7;
+    stroke-width:5px;
+}
+text {
+    font-size: 30px;
+    font-family: 'Comic Sans MS';
+    fill: #b35dc7;
+}
+.spis {
+    position:fixed;
+    width:13%;
+}
+
+h1{
+    color:azure;
+}
+#tytul2{
+    text-align:center;
+    color:black;
+}
+.content{
+    width:86%;
+    margin:auto;
+    border:thick double;
+    border-color:lightgrey;
+    overflow:hidden;
+    background-color:black;
+    
+   
+}
+article{
+    width:83%;
+    float:right;
+    height:inherit;
+    padding-left:1%;
+     background-color:#d9f7f2;
+}
+nav {
+    background-color: black;
+    float: left;
+    width: 16%;
+    color: azure;
+}
+.maty {
+    width: 12%;
+    transform: scale(1,1);
+}
+.maty:hover {transform: scale(1.07,1.07);}
+footer{
+
+    width:100%;
+    margin-top:10px;
+    height:40px;
+    margin-bottom:10px;
+}
+
+.anim {
+    
+    width: 3%;
+    float: right;
+    animation-name: knight;
+    animation-duration: 10s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+table{
+    border:dashed;
+    margin:auto;
+}
+td{
+    border:thin dashed;
+}
+fieldset{
+    padding:1%;
+    border:double;
+}
+legend{
+    font-size:20px;
+}
+
+@keyframes knight{
+    from{right:0%; transform:rotate(720deg);}
+    to{right:100%; transform: rotate(-720deg);}
+    
+}
+nav ol > li :link{
+    color:azure;
+}
+nav ol>li :visited{
+    color:azure;
+}
+nav ol>li :hover{
+    color:lightsteelblue;
+
+}
+nav ol li a.active{
+    background-color:#4d4a4a;
+}
+::selection{
+    background-color:#692137;
+    color:white;
+}
+@media all and (max-width:1200px){
+    article{width:100%;}
+    nav{width:100%;}
+    .spis{
+        position:static;
+        width:100%;
+    }
+    nav ul li{display:none;}
+    #nav{display:none;}
+    svg{display:none;}
+    
+}
+@media all and (max-width:840px) {
+    body{font-size:90%;}
+    #mat8{display:none;}
+}
+@media all and (max-width:768px) {
+    footer{display:none;}
+    body{margin-bottom:1%;}
+    article {padding: 0px;}
+    fieldset {padding:0px;}
+    header {
+        font-size: 85%;
+        padding:1px;
+        padding-left: 0px;
+        width: 95%;
+        padding-right:0px;
+    }
+    .content{border-left:none; border-right: none; border-bottom:none;width:95%; }
+}

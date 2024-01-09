@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Aleksandra Borsuk - moje hobby</title>
+    <link rel="stylesheet" type="text/css" href="css_strona1.css" />
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="js.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js "></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <noscript><style>#dialog-1{display:none;}</style></noscript>
+</head>
+<body>
+    <header>
+        <svg height="300" width="500" id="logo">
+            <ellipse cx="450" cy="38" rx="40" ry="25"></ellipse>
+            <text x="430" y="47">AB</text>
+        </svg>
+        <h1>Aleksandra Borsuk: moje hobby - szachy</h1>
+    </header>
+    <div class="content">
+        <nav>
+            <div class="spis">
+                <p id="nav">Spis treści:</p>
+                <ol>
+                    <li>
+                        <a href="index.html">Podstawowe informacje</a>
+                        <ul>
+                            <li><a href="index.html#menu1">Co to są szachy?</a></li>
+                            <li><a href="index.html#menu2">Historia szachów</a></li>
+                            <li><a href="index.html#menu3">Szachy a komputer</a></li>
+                            <li><a href="index.html#menu4">Popularność szachów</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="strona2.html">Zasady gry w szachy</a></li>
+                    <li><a class="active" href="strona3.html">Formularz zgłoszenia na zajęcia</a></li>
+                </ol>
+            </div>
+        </nav>
+        <article id="art">
+            <h2 id="tytul2">Tu zapiszesz się na zajęcia:</h2>
+            <form action="index.html" method="get" id="form">
+                <fieldset>
+                    <legend>Formularz zgłoszenia</legend>
+                    <b><label for="imie">Imię:</label></b>
+                    <input type="text" id="imie" name="imie" value="" onchange="formularz()" required /><br /><br />
+                    <b><label for="nazwisko">Nazwisko:</label></b>
+                    <input type="text" id="nazwisko" name="nazwisko" value="" onchange="formularz()" required /><br /><br />
+                    <b>Płeć:</b>
+                    <label for="male">Mężczyzna</label>
+                    <input type="radio" id="male" value="male" name="plec" checked="checked" onchange="formularz()" />
+                    <label for="female">Kobieta</label>
+                    <input type="radio" id="female" value="female" name="plec" onchange="formularz()" /> <br /><br />
+                    <b>Kategoria szachowa:</b>
+                    <select id="opt" onchange="formularz()">
+                        <option value="0">brak</option>
+                        <option value="1">5</option>
+                        <option value="2">4</option>
+                        <option value="3">3</option>
+                        <option value="4">2</option>
+                        <option value="5">1</option>
+                        <option value="6">wyższa</option>
+                    </select><br /><br />
+                    <b><label for="data">Data urodzenia:</label></b>
+                    <input type="date" id="data" name="data" onchange="formularz()" /><br /><br />
+                    <input type="reset" value="Wyczyść" onclick="re()" />
+                    <input type="submit" value="Wyślij" onclick="sub()" />
+                </fieldset>
+            </form>
+            <div id="dialog-1" title="Error">Wykryto błędy w formularzu </div>
+        </article>  
+    </div>
+    <footer>
+        <img class="anim" src="knight.png" alt="skoczek" />
+    </footer>
+    <script>spisz();licznik();ustawienia();walidate();</script>
+</body>
+</html>
